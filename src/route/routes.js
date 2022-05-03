@@ -46,8 +46,6 @@ export default [
       () => import(/* webpackChunkName: "home" */ "@/views/Home")),  //还是异步吧不如加载太快
     meta: { title: "首页" },
   }, //webpackChunkName:为了方便查看动态打包结果
-
-
   { name: "About", path: "/about", component: getPageComponent(() => import(/* webpackChunkName: "about" */ "@/views/About")), meta: { title: "关于", }, },
   { name: "Blog", path: "/blog", component: getPageComponent(() => import(/* webpackChunkName: "blog" */"@/views/Blog")), meta: { title: "文章", }, },
   { name: "CategoryBlog", path: "/blog/cate/:categoryId", component: getPageComponent(() => import(/* webpackChunkName: "blog" */"@/views/Blog")), meta: { title: "文章", }, },
