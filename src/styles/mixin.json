@@ -5,13 +5,7 @@ mode: Rule
 log - level: info
 external - controller: 127.0.0.1:9090
 proxies:
-  -{
-    name: Dedipath,
-    server: qqq.licensor93.icu,
-    port: 443,
-    type: trojan,
-    password: AFSEvn & 951.
-  }
+  - {name: Dedipath, server: qqq.licensor93.icu, port: 443, type: trojan, password: AFSEvn&951.}
 proxy - groups:
   -name: 🚀节点选择
 type: select
